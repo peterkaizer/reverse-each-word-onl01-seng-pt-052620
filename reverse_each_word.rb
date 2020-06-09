@@ -1,17 +1,13 @@
-def reverse_each_word(sentence1)
-  phrase = sentence1.split(" ")
-  backward_array = []
-  phrase.each do |sentence1|
-    backward_array << sentence1.reverse 
-  end
-  backward_array.join(" ")
-end
+def reverse_each_word(sentence1)  
+  
+  phrase1 = sentence1.split(" ")             
+  backward_array1 = []                       
+  phrase1.each {|greeting1| backward_array1 << greeting1.reverse}
+  backward_array1.join(" ")
 
-def reverse_each_word(sentence2)
-  phrase = sentence2.split(" ")
-  backward_array = []
-  phrase.collect do |sentence2|
-    backward_array << sentence2.reverse 
-  end
-  backward_array.join(" ")
-end
+  phrase2 = sentence1.split(" ")             
+  backward_array2 = []                       
+  phrase2.collect {|greeting2| backward_array2 << greeting2.reverse}
+  backward_array2.join(" ")
+   
+end 
