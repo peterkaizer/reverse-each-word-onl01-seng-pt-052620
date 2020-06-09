@@ -1,8 +1,8 @@
 def reverse_each_word(sentence1)
-  phrase = sentence1.split(" ")
-  backward_array = []
-  phrase.each do |sentence1|
-    backward_array << sentence1.reverse 
+  phrase = sentence1.split(" ")             #converting the string sentence1 into a new array called phrase.
+  backward_array = []                       #Creating an empty array
+  phrase.each do |sentence|                #using iterator .each on the phrase array
+    backward_array << sentence.reverse 
   end
   backward_array.join(" ")
 end
