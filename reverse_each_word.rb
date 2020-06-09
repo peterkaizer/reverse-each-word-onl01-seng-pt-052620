@@ -2,9 +2,7 @@ def reverse_each_word(sentence1)
   
   phrase1 = sentence1.split(" ")             
   backward_array1 = []                       
-  phrase1.each do |greeting1|                
-    backward_array1 << greeting1.reverse     
-  end
+  phrase1.each {|greeting1| backward_array1 << greeting1.reverse}
   backward_array1.join(" ")
 
   phrase2 = sentence1.split(" ")             
