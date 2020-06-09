@@ -10,8 +10,8 @@ end                                         #closing the definition
 def reverse_each_word(sentence2)
   phrase = sentence2.split(" ")
   backward_array = []
-  phrase.collect do |sentence2|
-   backward_array << sentence2.reverse 
+  phrase.collect do |greeting|
+   backward_array << greeting.reverse 
   end
   backward_array.join(" ")
 end
