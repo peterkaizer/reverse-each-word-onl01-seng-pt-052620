@@ -1,4 +1,4 @@
-def reverse_each_word(sentence)  
+def reverse_each_word(sentence1)  
   
   phrase1 = sentence1.split(" ")             
   backward_array1 = []                       
